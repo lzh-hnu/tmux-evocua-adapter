@@ -37,12 +37,13 @@ main,
 
 .hero-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) max-content;
+  grid-template-columns: max-content minmax(0, 1fr);
   align-items: start;
   gap: 42px;
 }
 
 .hero-copy {
+  grid-column: 2;
   min-width: 0;
 }
 
@@ -72,6 +73,7 @@ h1 {
 }
 
 .hero-media {
+  grid-column: 1;
   display: flex;
   align-items: center;
   width: max-content;
@@ -161,6 +163,11 @@ li + li { margin-top: 8px; }
   .hero-layout {
     grid-template-columns: 1fr;
     gap: 26px;
+  }
+
+  .hero-copy,
+  .hero-media {
+    grid-column: 1;
   }
 
   .hero-media {
