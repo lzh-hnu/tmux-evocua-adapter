@@ -78,7 +78,6 @@ h1 {
   margin: 0;
   padding: 12px;
   border: 1px solid var(--line);
-  border-radius: 8px;
   background: var(--panel);
   box-shadow: var(--shadow);
 }
@@ -88,7 +87,6 @@ h1 {
   width: 700px;
   height: 500px;
   object-fit: contain;
-  border-radius: 4px;
   background: var(--panel-soft);
 }
 
